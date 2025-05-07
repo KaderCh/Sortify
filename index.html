@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual DSA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen flex flex-col items-center p-6"
+  >
+    <h1 class="text-4xl font-bold mb-8">🧠 Visual DSA - Sorting Visualizer</h1>
+
+    <div class="flex flex-wrap items-center justify-center gap-4 mb-6">
+      <button
+        onclick="generateArray()"
+        class="bg-blue-600 px-4 py-2 rounded-xl hover:bg-blue-500 transition"
+      >
+        🔄 New Array
+      </button>
+      <button
+        onclick="bubbleSort()"
+        class="bg-green-600 px-4 py-2 rounded-xl hover:bg-green-500 transition"
+      >
+        ▶️ Bubble Sort
+      </button>
+      <button
+        onclick="selectionSort()"
+        class="bg-purple-600 px-4 py-2 rounded-xl hover:bg-purple-500 transition"
+      >
+        ▶️ Selection Sort
+      </button>
+      <button
+        onclick="insertionSort()"
+        class="bg-orange-600 px-4 py-2 rounded-xl hover:bg-orange-500 transition"
+      >
+        ▶️ Insertion Sort
+      </button>
+      <button
+        onclick="startMergeSort()"
+        class="bg-pink-600 px-4 py-2 rounded-xl hover:bg-pink-500 transition"
+      >
+        ▶️ Merge Sort
+      </button>
+      <button
+        onclick="startQuickSort()"
+        class="bg-teal-600 px-4 py-2 rounded-xl hover:bg-teal-500 transition"
+      >
+        ▶️ Quick Sort
+      </button>
+      <button
+        onclick="startRadixSort()"
+        class="bg-indigo-600 px-4 py-2 rounded-xl hover:bg-indigo-500 transition"
+      >
+        ▶️ Radix Sort
+      </button>
+
+      <div class="flex items-center gap-2">
+        <label for="speed" class="text-sm">Speed:</label>
+        <input
+          type="range"
+          id="speed"
+          min="10"
+          max="300"
+          value="100"
+          class="w-32 accent-blue-500"
+        />
+      </div>
+    </div>
+
+    <div
+      id="array"
+      class="flex items-end gap-1 h-64 w-full max-w-4xl border border-white rounded-lg p-2 bg-gray-700 overflow-hidden"
+    ></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
