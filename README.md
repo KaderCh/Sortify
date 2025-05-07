@@ -54,7 +54,7 @@
 2. **Open index.html directly in a browser**
     No build tools or installation needed!
 ---
-    📚 How It Works
+📚 How It Works
 A random array of values is generated and represented as vertical bars.
 
 Each algorithm animates step-by-step actions like comparison, swap, and placement.
