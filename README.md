@@ -51,7 +51,7 @@
    cd Sortify
 
 
-**2. Open index.html directly in a browser**
+2. **Open index.html directly in a browser**
     No build tools or installation needed!
 ---
     📚 How It Works
